@@ -13,11 +13,11 @@ const Footer = () => {
   );
 
   return (
-    <div className="bg-dark py-24 text-sm font-pt">
+    <div className="bg-dark py-24 text-sm font-roboto">
       <div className="container  flex flex-col md:flex-row items-start gap-8 text-white">
         {/* first */}
         <div className="flex flex-col gap-6 flex-1">
-          <img src={logo} alt="" className="w-24" />
+          <img src="./images/alpha-logoo.png" alt="" className="w-52" />
 
           <span>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
@@ -35,7 +35,7 @@ const Footer = () => {
 
         {/* second */}
         <div className="flex flex-col gap-6 flex-1">
-          <h4 className="font-bold text-lg">Company</h4>
+          <h4 className="font-bold text-lg font-pt">Company</h4>
 
           <ul className="flex flex-col gap-2">
             <li>About company </li>
@@ -48,7 +48,7 @@ const Footer = () => {
 
         {/* third */}
         <div className="flex flex-col gap-6 flex-1">
-          <h4 className="font-bold text-lg">Recent Event</h4>
+          <h4 className="font-bold text-lg font-pt">Recent Event</h4>
 
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* fourth */}
         <div className="flex flex-col gap-6 flex-1">
-          <h4 className="font-bold text-lg">Newsletter</h4>
+          <h4 className="font-bold text-lg font-pt">Newsletter</h4>
 
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
@@ -84,6 +84,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/*  */}
+      <div className="flex flex-col md:flex-row space-between text-white text-center justify-center pt-6 mt-6 border-t border-gray-700 gap-2">
+        <span>Copyright © 2023 - All Right Reserved by</span>
+        <span className="text-secondary">Alpha-Scores Training Ltd.</span>
       </div>
     </div>
   );

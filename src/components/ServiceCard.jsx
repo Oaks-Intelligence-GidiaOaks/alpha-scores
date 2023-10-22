@@ -12,7 +12,7 @@ const ServiceCard = () => {
   return (
     <div
       style={style}
-      className="text-white shrink-0 text-sm font-roboto h-[400px] w-80 py-4 px-4 flex flex-col gap-4"
+      className="text-white card shrink-0 text-sm font-roboto h-[400px] w-80 py-4 px-4 flex flex-col gap-4"
     >
       <h3 className="mt-auto text-2xl font-semibold font-pt">
         Financial Advices

@@ -6,8 +6,14 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [sideNavShown, setSideNavShown] = useState(false);
 
+  const active = `text-secondary`;
+
   const HeaderItem = ({ text, route }) => (
-    <NavLink to={route}>
+    <NavLink
+      onClick={toggleSideNav}
+      className={({ isActive }) => (isActive ? active : "")}
+      to={route}
+    >
       <span>{text}</span>
     </NavLink>
   );
@@ -26,7 +32,11 @@ const Header = () => {
           <AiOutlineMenu />
         </div>
 
-        <img src={logo} alt="" className="w-32 mx-auto md:mx-0 " />
+        <img
+          src="./images/alpha-logoo.png"
+          alt=""
+          className="w-36 mx-auto md:mx-0 "
+        />
 
         <div className="md:flex items-center gap-5 mx-auto hidden">
           <HeaderItem route="/" text="Home" />
@@ -35,9 +45,11 @@ const Header = () => {
           <HeaderItem route="/events" text="Events & Training" />
         </div>
 
-        <button className="ml-auto p-2 px-3 text-center  bg-secondary rounded-md text-white hidden md:block">
-          Contact us
-        </button>
+        <NavLink onClick={toggleSideNav} to={`/contact`}>
+          <button className="ml-auto p-2 px-3 text-center  bg-secondary rounded-md text-white hidden md:block">
+            Contact us
+          </button>
+        </NavLink>
 
         {/* sidebar */}
         <div

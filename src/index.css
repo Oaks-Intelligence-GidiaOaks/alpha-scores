@@ -15,3 +15,27 @@
   cursor: grab;
   user-select: none;
 }
+
+#carousel {
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+#carousel.dragging {
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+#carousel > .card {
+  scroll-snap-align: start;
+}
+
+#carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.country-dropdown > select {
+  outline: none;
+  padding: 10px;
+}

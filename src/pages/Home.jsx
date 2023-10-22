@@ -1,4 +1,5 @@
 import {
+  AboutSummary,
   Banner,
   CallUs,
   Events,
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner />
 
       {/* about summary */}
+      <AboutSummary />
 
       {/* services */}
       <Services />

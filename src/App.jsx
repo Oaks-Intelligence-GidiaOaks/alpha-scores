@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "./components";
-import { Home, About, Services, Events, Contact } from "./pages";
+import { Home, About, Services, Events, Contact, Register } from "./pages";
 
 function App() {
   return (
@@ -12,7 +12,9 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="events" element={<Events />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="register" element={<Register />} />
         </Route>
+        <Route path="*" element={<center>Error page...</center>} />
       </Routes>
     </Router>
   );

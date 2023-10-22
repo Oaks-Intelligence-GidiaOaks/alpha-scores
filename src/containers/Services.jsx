@@ -1,3 +1,6 @@
+import Slider from "react-slick";
+import "~slick-carousel/slick/slick.css";
+import "~slick-carousel/slick/slick-theme.css";
 import React, { useEffect, useRef, useState } from "react";
 import { ServiceCard } from "../components";
 
@@ -8,12 +11,38 @@ const Services = () => {
 
   const ref = useRef(null);
 
+  const slideSetting = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   useEffect(() => {
     const carousel = document.querySelector("#carousel");
+    const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+    const carouselChildren = [...carousel.children];
+
+    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+    // insert the copies of the last few cards to beginning of carousel for infinite scrolling
+    carouselChildren
+      .slice(-cardPerView)
+      .reverse()
+      .map((card) => {
+        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+      });
+
+    // insert the copies of the first few cards to end of carousel for infinite scrolling
+    carouselChildren.slice(0, cardPerView).map((card) => {
+      carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+    });
 
     let isDragging = false,
       startX,
-      startScrollLeft;
+      startScrollLeft,
+      timeoutId;
 
     const dragStart = (e) => {
       isDragging = true;
@@ -32,10 +61,40 @@ const Services = () => {
       carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
     };
 
+    const autoPlay = () => {
+      if (window.innerWidth < 800) return;
+
+      // AutoPlay the carousel after every 2500 ms
+      timeoutId = setTimeout(
+        () => (carousel.scrolLeft += firstCardWidth),
+        2500
+      );
+    };
+
+    autoPlay();
+
+    const inifniteScroll = () => {
+      if (carousel.scrollLeft == 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+      } else if (
+        Math.ceil(carousel.scrollLeft) ==
+        carousel.scrollWidth - carousel.offsetWidth
+      ) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+      }
+    };
+
     // add an event listener
     carousel.addEventListener("mousedown", dragStart);
-    carousel.addEventListener("mouseup", dragStop);
+    document.addEventListener("mouseup", dragStop);
     carousel.addEventListener("mousemove", dragging);
+    carousel.addEventListener("scroll", inifniteScroll);
+
+    //
 
     return () => {
       carousel.removeEventListener("mousemove", dragging);
@@ -53,15 +112,15 @@ const Services = () => {
 
       <div
         ref={ref}
-        id="carousel"
-        className="container flex mt-16 gap-5 items-start overflow-x-hidden scrollbar-hide"
+        // id="carousel"
+        className="container flex mt-16 gap-5 items-start scrollbar-hide"
       >
-        <div ref={ref}>
+        <Slider {...slideSetting}>
           <ServiceCard />
-        </div>
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
+        </Slider>
       </div>
 
       <div className="flex mt-5 top-4 justify-center py-2 gap-2">
