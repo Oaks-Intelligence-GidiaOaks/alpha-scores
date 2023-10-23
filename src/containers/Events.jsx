@@ -1,11 +1,57 @@
 import React, { useRef, useState } from "react";
-import { EventCard, ServiceCard } from "../components";
+import { EventCard } from "../components";
+import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const Events = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const ref = useRef();
 
   const slides = [0, 1, 2, 3];
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    adaptiveHeight: true,
+    arrows: false,
+    draggable: true,
+    initialSlide: 0,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="py-24 bg-primary">
@@ -19,20 +65,16 @@ const Events = () => {
         </h2>
       </div>
 
-      <div
-        ref={ref}
-        id="carousel"
-        className="container flex mt-16 gap-5 items-start overflow-x-hidden scrollbar-hide"
-      >
-        <div ref={ref}>
+      <div className="container mt-16 gap-5">
+        <Slider {...settings}>
           <EventCard />
-        </div>
-        <EventCard />
-        <EventCard />
-        <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+        </Slider>
       </div>
 
-      <div className="flex mt-5 top-4 justify-center py-2 gap-2">
+      {/* <div className="flex mt-5 top-4 justify-center py-2 gap-2">
         {slides.map((item, i) => (
           <div
             key={i}
@@ -42,7 +84,7 @@ const Events = () => {
             }`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
