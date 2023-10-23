@@ -169,12 +169,12 @@ const Services = () => {
             img="./images/04.jpg"
           />
           <ServiceCard
-            img=""
+            img="https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VwcGx5fGVufDB8fDB8fHww"
             text="We offer trainings on supply chain optimization and real-time supply chain strategies that drive your enterprise to success"
             header="Supply Chain Solutions"
           />
           <ServiceCard
-            img=""
+            img="https://images.unsplash.com/photo-1529704193007-e8c78f0f46f9?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZW5lcmd5fGVufDB8fDB8fHww"
             text="We train our clients on how and where to invest in renewable energy sources."
             header="Energy Solutions"
           />

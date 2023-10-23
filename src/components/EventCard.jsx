@@ -24,7 +24,7 @@ const EventCard = ({ img, header, date }) => {
       <p className="uppercase font-bold text-lg font-pt">{header}</p>
 
       <Link to={`/register`}>
-        <button className="flex items-center gap-3 border-secondary border w-fit p-3 px-5 rounded ">
+        <button className="flex hover:bg-secondary items-center gap-3 border-secondary border w-fit p-3 px-5 rounded ">
           <span>Register</span>
           <AiOutlineArrowRight />
         </button>

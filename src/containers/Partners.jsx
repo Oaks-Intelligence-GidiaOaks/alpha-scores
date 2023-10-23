@@ -20,6 +20,7 @@ const Partners = () => {
         <PartnerCard img="https://www.escrow-tech.co.uk/assets/img/partner2.png" />
         <PartnerCard img="https://www.escrow-tech.co.uk/assets/img/partner3.png" />
         <PartnerCard img="./images/escrow-logo.png" />
+        <PartnerCard img="./images/niccra-logo.png" />
       </div>
     </div>
   );

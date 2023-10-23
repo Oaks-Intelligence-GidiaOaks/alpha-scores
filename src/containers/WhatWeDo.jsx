@@ -1,7 +1,11 @@
 import React from "react";
 import { GrCloudSoftware } from "react-icons/gr";
 import { SiJirasoftware } from "react-icons/si";
-import { GiArchiveResearch, GiRollingEnergy } from "react-icons/gi";
+import {
+  GiArchiveResearch,
+  GiEnergyArrow,
+  GiRollingEnergy,
+} from "react-icons/gi";
 import { PiAirplaneTakeoffBold } from "react-icons/pi";
 import { AiOutlineSolution } from "react-icons/ai";
 import { FcApproval } from "react-icons/fc";
@@ -70,7 +74,7 @@ We also train and organize comprehensive seminars for our clients to equip them 
           text="We train individuals on practical ways to measure, report, and reduce carbon footprints across all emission scopes."
         />
         <ServiceCard
-          Icon={<FcApproval className="text-secondary text-4xl" />}
+          Icon={<GiEnergyArrow className="text-secondary text-4xl" />}
           lead="Supply Chain Solutions"
           text="We offer trainings on supply chain optimization and real-time supply chain strategies that drive your enterprise to success."
         />

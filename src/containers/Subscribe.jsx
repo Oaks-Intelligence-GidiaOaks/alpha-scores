@@ -28,7 +28,7 @@ const Subscribe = () => {
             placeholder="Enter your email"
           />
 
-          <button className="p-5 flex rounded bg-[#14212b] items-center text-white gap-3">
+          <button className=" p-2 md:p-5 flex rounded bg-[#14212b] items-center text-white gap-3">
             <span>Subscribe</span>
             <GrMoreVertical />
           </button>

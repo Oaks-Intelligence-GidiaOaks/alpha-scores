@@ -20,7 +20,7 @@ const OurSkills = () => {
         {/* first */}
         <div className="space-y-6 flex-1 z-20 font-pt">
           <h5 className="text-secondary">Our Professional Skill’s</h5>
-          <h2 className="text-5xl font-bold font-pt text-white">
+          <h2 className="text-3xl md:text-5xl font-bold font-pt text-white">
             Professional Skill <br /> of{" "}
             <span className="text-secondary"> Alpha-Scores</span>
           </h2>

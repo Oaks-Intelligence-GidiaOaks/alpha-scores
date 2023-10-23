@@ -5,7 +5,7 @@ const EventMainCard = ({ image, date, lead, text, partners, venue }) => {
   return (
     <div className="space-y-4">
       <div className="">
-        <img src="./images/e1.jpg" className="" alt="" />
+        <img src={image} className="w-full rounded-md" alt="" />
       </div>
 
       <div className="flex flex-wrap items-center  text-grey gap-4 text-sm">

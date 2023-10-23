@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ header, text, img }) => {
   const style = {
-    background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(${img})`,
+    background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(${img})`,
     backgroundPosition: "center center",
     backgroundSize: "cover",
   };
