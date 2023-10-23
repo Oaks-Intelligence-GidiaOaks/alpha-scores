@@ -36,7 +36,7 @@ const Home = () => {
       <Partners />
 
       {/* contact cards */}
-      <CallUs />
+      {/* <CallUs /> */}
     </div>
   );
 };

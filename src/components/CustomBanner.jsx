@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CustomBanner = ({ image, lead, nav1, nav2 }) => {
   const customeStyle = {
@@ -18,9 +19,11 @@ const CustomBanner = ({ image, lead, nav1, nav2 }) => {
         <h2 className="text-4xl md:text-6xl font-bold font-pt">{lead}</h2>
 
         <p className="space-x-5 text-base font-bold">
-          <span>Home </span>
+          <Link to={`/`}>
+            <span className="hover:text-secondary">Home </span>
+          </Link>
           <span>- </span>
-          <span>{nav2} </span>
+          <span className="text-secondary">{nav2} </span>
         </p>
       </div>
     </div>

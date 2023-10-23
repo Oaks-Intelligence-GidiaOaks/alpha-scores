@@ -9,7 +9,7 @@ const Contact = () => {
       <CustomBanner image="" lead="Contact Us" nav2="Contact" />
 
       {/* contact cards */}
-      <div className=" container py-24 ">
+      {/* <div className=" container py-24 ">
         <div className=" md:w-5/6 grid mx-auto place-items-center grid-cols-1 md:grid-cols-2 gap-4  gap-y-8 border border-green-500">
           <ContactCard
             Icon={""}
@@ -21,7 +21,7 @@ const Contact = () => {
           <ContactCard Icon={""} baseText="" lead1="" lead2="" />
           <ContactCard Icon={""} baseText="" lead1="" lead2="" />
         </div>
-      </div>
+      </div> */}
 
       {/* contact form */}
       <ContactForm />

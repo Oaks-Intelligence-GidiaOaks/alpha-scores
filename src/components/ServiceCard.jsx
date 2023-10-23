@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ header, text, img }) => {
   const style = {
@@ -15,16 +16,14 @@ const ServiceCard = ({ header, text, img }) => {
     >
       <h3 className="mt-auto text-2xl font-semibold font-pt">{header}</h3>
 
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
-        voluptate mollitia magni quas ipsa explicabo nemo. Quidem asperiores
-        temporibus obcaecati!
-      </p>
+      <p>{text}</p>
 
-      <button className="flex items-center gap-3 border-secondary border w-fit p-3 px-5 rounded ">
-        <span>Details</span>
-        <AiOutlineArrowRight />
-      </button>
+      <Link to={`/services`}>
+        <button className="flex items-center gap-3 border-secondary border w-fit p-3 px-5 rounded ">
+          <span>Learn more</span>
+          <AiOutlineArrowRight />
+        </button>
+      </Link>
     </div>
   );
 };

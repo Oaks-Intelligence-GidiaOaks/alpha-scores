@@ -145,20 +145,41 @@ const Services = () => {
         <h2 className="text-4xl font-pt font-bold text-white">All Services</h2>
       </div>
 
-      {/* <div
-        ref={ref}
-        // id="carousel"
-        className="container flex mt-16 gap-5 items-start scrollbar-hide"
-      > */}
       <div className="container mt-16 gap-5">
         <Slider {...settings}>
-          <ServiceCard header="Finacial Services" img="./images/04.jpg" />
-          <ServiceCard header="Specialized Training" img="./images/06.jpg" />
-          <ServiceCard header="Consultancy" img="./images/03.jpg" />
-          <ServiceCard header="Business Analysis" img="./images/04.jpg" />
+          <ServiceCard
+            header="Software Development"
+            img="./images/04.jpg"
+            text="
+            We provide training by experienced developers in website, mobile app, and complex software development, including AI integration to meet clients' business objectives."
+          />
+          <ServiceCard
+            header="Advisory"
+            img="./images/06.jpg"
+            text="We offer training and workshops, providing advisory services to both current and potential clients. These services deliver actionable insights and recommendations to help businesses achieve long-term sustainability in their objectives."
+          />
+          <ServiceCard
+            text="We leverage our knowledge and experience with digital tools to train and equip our clients in courses such as artificial intelligence, deep learning, natural language processing, and image recognition."
+            header="Research"
+            img="./images/03.jpg"
+          />
+          <ServiceCard
+            header="Infrastructural Solutions"
+            text="We train individuals on practical ways to measure, report, and reduce carbon footprints across all emission scopes."
+            img="./images/04.jpg"
+          />
+          <ServiceCard
+            img=""
+            text="We offer trainings on supply chain optimization and real-time supply chain strategies that drive your enterprise to success"
+            header="Supply Chain Solutions"
+          />
+          <ServiceCard
+            img=""
+            text="We train our clients on how and where to invest in renewable energy sources."
+            header="Energy Solutions"
+          />
         </Slider>
       </div>
-      {/* </div> */}
 
       {/* <div className="flex mt-5 top-4 justify-center py-2 gap-2">
         {slides.map((item, i) => (

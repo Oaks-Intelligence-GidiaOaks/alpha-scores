@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/alphaa.svg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -32,11 +32,13 @@ const Header = () => {
           <AiOutlineMenu />
         </div>
 
-        <img
-          src="./images/alpha-logoo.png"
-          alt=""
-          className="w-36 mx-auto md:mx-0 "
-        />
+        <Link to={`/`}>
+          <img
+            src="./images/alpha-logoo.png"
+            alt=""
+            className="w-36 mx-auto md:mx-0 "
+          />
+        </Link>
 
         <div className="md:flex items-center gap-5 mx-auto hidden">
           <HeaderItem route="/" text="Home" />
@@ -53,7 +55,7 @@ const Header = () => {
 
         {/* sidebar */}
         <div
-          className={`bg-primary h-screen fixed  top-0 left-0 w-3/5 p-5 px-6 md:hidden ${
+          className={`z-40 bg-primary h-screen fixed  top-0 left-0 w-3/5 p-5 px-6 md:hidden ${
             sideNavShown ? "block" : "hidden"
           }`}
         >

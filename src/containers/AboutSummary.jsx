@@ -3,7 +3,7 @@ import { MdOutlineReadMore } from "react-icons/md";
 
 const AboutSummary = () => {
   return (
-    <div className="py-24">
+    <div id="about-summary" className="py-24">
       <div className="container flex flex-col md:flex-row gap-16">
         {/* first */}
         <div className="flex-1 ">
@@ -22,11 +22,9 @@ const AboutSummary = () => {
           </h2>
 
           <p className="text-grey">
-            Lorem Ipsum is simply dummy text of the printing and typesetting’s
-            the industrey's standard dummy text ever since the 1500 when printed
-            galley of type and scrambled type specimen book. One way to
-            categorize the activities is in terms of the professional’s area of
-            expertise such as competitive analysis, corporate strategy.
+            We also offer all consulting services captured within the scope of
+            our company’s training manual, which will help you make the right
+            business and career decisions through different economic seasons.
           </p>
 
           <button className="mt-8 flex w-fit px-6 py-3 text-white rounded items-center gap-2 text-sm bg-secondary">

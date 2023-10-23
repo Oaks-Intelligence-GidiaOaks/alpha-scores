@@ -1,13 +1,14 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { MdDateRange } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-const EventCard = () => {
+const EventCard = ({ img, header, date }) => {
   const style = {
-    background:
-      " linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(./images/06.jpg)",
+    background: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(${img})`,
     backgroundPosition: "center center",
     backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   };
 
   return (
@@ -17,17 +18,17 @@ const EventCard = () => {
     >
       <div className="mt-auto flex items-center gap-3 ">
         <MdDateRange />
-        <span>25 Dec, 2023</span>
+        <span>{date}</span>
       </div>
 
-      <p className="uppercase font-bold text-lg font-pt">
-        Climatic Change Training for Beginners
-      </p>
+      <p className="uppercase font-bold text-lg font-pt">{header}</p>
 
-      <button className="flex items-center gap-3 border-secondary border w-fit p-3 px-5 rounded ">
-        <span>Register</span>
-        <AiOutlineArrowRight />
-      </button>
+      <Link to={`/register`}>
+        <button className="flex items-center gap-3 border-secondary border w-fit p-3 px-5 rounded ">
+          <span>Register</span>
+          <AiOutlineArrowRight />
+        </button>
+      </Link>
     </div>
   );
 };

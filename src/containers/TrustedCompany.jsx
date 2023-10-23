@@ -2,25 +2,27 @@ import React from "react";
 
 import { GiTeacher } from "react-icons/gi";
 import { MdOutlineReadMore } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const TrustedCompany = () => {
   return (
     <div className="py-16">
       <div className="container flex flex-col md:flex-row gap-10">
         {/* first */}
-        <div className="flex-1 space-y-8">
+        <div className="flex-1 flex flex-col gap-y-8">
           <h5 className="text-secondary">Welcome To Alpha-Scores</h5>
 
           <h2
             className={` text-[#0a272c] text-3xl md:text-5xl font-bold font-pt`}
           >
-            We are trusted consulting company.
+            We are a trusted consulting company.
           </h2>
 
           <p className="text-grey">
-            Lorem Ipsum is simply dummy text of the printing and typesetting’s
-            the industrey's standard dummy text ever since the 1500 when printed
-            galley of type and scrambled type specimen book.
+            Alpha Scores Training Limited is a foremost training company with
+            remarkable expertise in training extraordinary and top-notch
+            individuals to become experts in various career and business options
+            captured within the scope of the Alpha Scores Training Manual.
           </p>
 
           <div className="flex gap-2 items-center font-pt">
@@ -30,10 +32,12 @@ const TrustedCompany = () => {
             </span>
           </div>
 
-          <button className=" flex w-fit px-6 py-3 text-white rounded items-center gap-2 text-sm bg-secondary">
-            <span>Our Services</span>
-            <MdOutlineReadMore />
-          </button>
+          <Link to={`/services`}>
+            <button className="flex w-fit px-6 py-3 text-white rounded items-center gap-2 text-sm bg-secondary">
+              <span>Our Services</span>
+              <MdOutlineReadMore />
+            </button>
+          </Link>
         </div>
 
         {/* second */}

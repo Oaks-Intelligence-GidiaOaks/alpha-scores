@@ -4,6 +4,8 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { GrMail, GrTwitter } from "react-icons/gr";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsSendFill } from "react-icons/bs";
+import { MdDateRange } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const IconItem = ({ Icon }) => (
@@ -13,19 +15,20 @@ const Footer = () => {
   );
 
   return (
-    <div className="bg-dark py-24 text-sm font-roboto">
+    <div className="bg-dark py-24 text-sm font-roboto ">
       <div className="container  flex flex-col md:flex-row items-start gap-8 text-white">
         {/* first */}
-        <div className="flex flex-col gap-6 flex-1">
+        <div className="flex flex-col gap-5 font-roboto flex-1">
           <img src="./images/alpha-logoo.png" alt="" className="w-52" />
 
-          <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-            corporis iste beatae, obcaecati numquam temporibus soluta
-            dignissimos. Unde, rem asperiores?
+          <span className="text-xs text-gray-300">
+            Alpha Scores Training Limited is a foremost training company with
+            remarkable expertise in training extraordinary and top-notch
+            individuals to become experts in various career and business options
+            captured within the scope of the Alpha Scores Training Manual.
           </span>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 ">
             <IconItem Icon={BiLogoFacebook} />
             <IconItem Icon={AiFillInstagram} />
             <IconItem Icon={GrMail} />
@@ -37,12 +40,28 @@ const Footer = () => {
         <div className="flex flex-col gap-6 flex-1">
           <h4 className="font-bold text-lg font-pt">Company</h4>
 
-          <ul className="flex flex-col gap-2">
-            <li>About company </li>
-            <li>Our services </li>
-            <li>Contact us</li>
-            <li>Events </li>
-            <li> company </li>
+          <ul className="flex flex-col gap-2 text-gray-300">
+            <Link to={"/about"}>
+              <li className="hover:text-secondary cursor-pointer">
+                About company
+              </li>
+            </Link>
+
+            <Link to={"/services"}>
+              <li className="hover:text-secondary cursor-pointer">
+                Our services
+              </li>
+            </Link>
+
+            <Link to={"/contact"}>
+              <li className="hover:text-secondary cursor-pointer">
+                Contact us
+              </li>
+            </Link>
+
+            <Link to={"/events"}>
+              <li className="hover:text-secondary cursor-pointer">Events </li>
+            </Link>
           </ul>
         </div>
 
@@ -50,28 +69,21 @@ const Footer = () => {
         <div className="flex flex-col gap-6 flex-1">
           <h4 className="font-bold text-lg font-pt">Recent Event</h4>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
-            ullam?
+          <p className="text-gray-300">
+            Pre-COP28 Training for Nigerian Parliamentarians and Executives on
+            Regulatory Policies for Addressing Cliimate and Environmental Risks.
           </p>
 
-          <ul className="flex flex-col gap-2">
-            <li>About company </li>
-            <li>Our services </li>
-            <li>Contact us</li>
-            <li>Events </li>
-            <li> company </li>
-          </ul>
+          <div className="flex items-center gap-2 text-gray-300">
+            <MdDateRange className="text-secondary" /> Nov, 2023
+          </div>
         </div>
 
         {/* fourth */}
         <div className="flex flex-col gap-6 flex-1">
           <h4 className="font-bold text-lg font-pt">Newsletter</h4>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae,
-            ullam?
-          </p>
+          <p>Subscribe to our Newsletter</p>
 
           <div className="flex gap-3 p-1 items-center rounded px-3 bg-[#28343e]">
             <input
