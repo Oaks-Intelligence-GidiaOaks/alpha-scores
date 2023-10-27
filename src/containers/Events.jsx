@@ -69,7 +69,7 @@ const Events = () => {
         <Slider {...settings}>
           <EventCard
             date="Nov, 2023"
-            header="3 Days Pre-COP28 Training for Nigerian Parliament"
+            header="3 Days Pre-COP28 Training for Climate Decision Makers"
             img="https://plus.unsplash.com/premium_photo-1661766222233-e617a1180fa2?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaCUyMHRyYWluaW5nfGVufDB8fDB8fHww"
           />
           <EventCard

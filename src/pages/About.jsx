@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomBanner } from "../components";
+import { CustomBanner, Footer, Header } from "../components";
 import {
   MissionVision,
   OurSkills,
@@ -10,6 +10,7 @@ import {
 const About = () => {
   return (
     <div>
+      <Header />
       {/* banner */}
       <CustomBanner image="" lead="About us" nav2="About" />
 
@@ -24,6 +25,9 @@ const About = () => {
 
       {/* testimnial */}
       <Testimnoials />
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 };

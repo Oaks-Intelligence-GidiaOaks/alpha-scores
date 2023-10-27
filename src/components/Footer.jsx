@@ -1,11 +1,10 @@
-import React from "react";
-import logo from "../assets/alphaa.svg";
 import { BiLogoFacebook } from "react-icons/bi";
 import { GrMail, GrTwitter } from "react-icons/gr";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsSendFill } from "react-icons/bs";
 import { MdDateRange } from "react-icons/md";
 import { Link } from "react-router-dom";
+import logo from "../assets/alpha-white-2.svg";
 
 const Footer = () => {
   const IconItem = ({ Icon }) => (
@@ -19,10 +18,15 @@ const Footer = () => {
       <div className="container  flex flex-col md:flex-row items-start gap-8 text-white">
         {/* first */}
         <div className="flex flex-col gap-5 font-roboto flex-1">
-          <img src="./images/alpha-logoo.png" alt="" className="w-52" />
+          <img
+            // src="./images/alpha-logoo.png"
+            src={logo}
+            alt=""
+            className="w-52"
+          />
 
           <span className="text-xs text-gray-300">
-            Alpha Scores Training Limited is a foremost training company with
+            Alpha Scores Training Ltd is a foremost training company with
             remarkable expertise in training extraordinary and top-notch
             individuals to become experts in various career and business options
             captured within the scope of the Alpha Scores Training Manual.

@@ -39,3 +39,22 @@
   outline: none;
   padding: 10px;
 }
+
+.react-tel-input .flag-dropdown {
+  border: 1px solid rgb(104, 118, 147);
+}
+
+#input-label::before {
+  content: "*";
+  color: red;
+  position: absolute;
+  right: -10px;
+  font-size: 16;
+}
+
+.css-13cymwt-control {
+  padding: 6px;
+  border: 1px solid #687693 !important;
+  color: #687693 !important;
+  border-radius: 15px;
+}

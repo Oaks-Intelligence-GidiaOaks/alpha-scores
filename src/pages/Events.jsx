@@ -1,9 +1,17 @@
 import React from "react";
-import { CustomBanner, EventCard, EventMainCard } from "../components";
+import {
+  CustomBanner,
+  EventCard,
+  EventMainCard,
+  Footer,
+  Header,
+} from "../components";
 
 const Events = () => {
   return (
     <div className="">
+      <Header />
+
       {/* banner */}
       <CustomBanner image="" lead="Events & Training" nav2="Events" />
 
@@ -41,6 +49,9 @@ const Events = () => {
           />
         </div>
       </div>
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 };

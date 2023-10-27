@@ -19,7 +19,7 @@ const TrustedCompany = () => {
           </h2>
 
           <p className="text-grey">
-            Alpha Scores Training Limited is a foremost training company with
+            Alpha Scores Training Ltd is a foremost training company with
             remarkable expertise in training extraordinary and top-notch
             individuals to become experts in various career and business options
             captured within the scope of the Alpha Scores Training Manual.

@@ -1,15 +1,13 @@
-import React from "react";
-
 const Testimnoials = () => {
   return (
     <div id="testimonilas" className="py-24">
       <div className="container flex flex-col md:flex-row gap-16 text-base font-[500]">
         <div className="flex flex-col ">
           <div className="flex flex-col gap-3">
-            <h2 className="text-secondary uppercase">CLIENT TESTIMONIAL</h2>
+            <h2 className="text-secondary uppercase">PARTNERS TESTIMONIAL</h2>
 
             <h1 className="font-semibold text-4xl md:text-5xl font-pt">
-              Best Word From Our Clients
+              Best Word From Our Partners
             </h1>
           </div>
 

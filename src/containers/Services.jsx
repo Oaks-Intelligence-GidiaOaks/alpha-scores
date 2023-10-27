@@ -148,10 +148,15 @@ const Services = () => {
       <div className="container mt-16 gap-5">
         <Slider {...settings}>
           <ServiceCard
-            header="Software Development"
+            header="Training"
             img="./images/04.jpg"
             text="
             We provide training by experienced developers in website, mobile app, and complex software development, including AI integration to meet clients' business objectives."
+          />
+          <ServiceCard
+            img="https://images.unsplash.com/photo-1529704193007-e8c78f0f46f9?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZW5lcmd5fGVufDB8fDB8fHww"
+            text="We train our clients on how and where to invest in renewable energy sources."
+            header=" Consulting"
           />
           <ServiceCard
             header="Advisory"
@@ -162,21 +167,6 @@ const Services = () => {
             text="We leverage our knowledge and experience with digital tools to train and equip our clients in courses such as artificial intelligence, deep learning, natural language processing, and image recognition."
             header="Research"
             img="./images/03.jpg"
-          />
-          <ServiceCard
-            header="Infrastructural Solutions"
-            text="We train individuals on practical ways to measure, report, and reduce carbon footprints across all emission scopes."
-            img="./images/04.jpg"
-          />
-          <ServiceCard
-            img="https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VwcGx5fGVufDB8fDB8fHww"
-            text="We offer trainings on supply chain optimization and real-time supply chain strategies that drive your enterprise to success"
-            header="Supply Chain Solutions"
-          />
-          <ServiceCard
-            img="https://images.unsplash.com/photo-1529704193007-e8c78f0f46f9?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZW5lcmd5fGVufDB8fDB8fHww"
-            text="We train our clients on how and where to invest in renewable energy sources."
-            header="Energy Solutions"
           />
         </Slider>
       </div>

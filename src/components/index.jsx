@@ -8,3 +8,5 @@ export { default as CustomBanner } from "./CustomBanner";
 export { default as EventMainCard } from "./EventMainCard";
 export { default as FormInput } from "./FormInput";
 export { default as FormCheckbox } from "./FormCheckbox";
+export { default as FormCountrySelect } from "./FormCountrySelect";
+export { default as FormPhoneInput } from "./FormPhoneInput";

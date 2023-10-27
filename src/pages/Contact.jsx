@@ -1,10 +1,12 @@
 import React from "react";
-import { ContactCard, CustomBanner } from "../components";
+import { ContactCard, CustomBanner, Footer, Header } from "../components";
 import { ContactForm } from "../containers";
 
 const Contact = () => {
   return (
     <div>
+      {/* header */}
+      <Header />
       {/* banner */}
       <CustomBanner image="" lead="Contact Us" nav2="Contact" />
 
@@ -26,9 +28,8 @@ const Contact = () => {
       {/* contact form */}
       <ContactForm />
 
-      {/* map */}
-
-      {/*  */}
+      {/* footer */}
+      <Footer />
     </div>
   );
 };

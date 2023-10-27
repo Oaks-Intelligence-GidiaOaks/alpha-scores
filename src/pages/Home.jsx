@@ -1,3 +1,4 @@
+import { Footer, Header } from "../components";
 import {
   AboutSummary,
   Banner,
@@ -11,6 +12,7 @@ import {
 const Home = () => {
   return (
     <div>
+      <Header />
       {/* banner */}
       <Banner />
 
@@ -37,6 +39,7 @@ const Home = () => {
 
       {/* contact cards */}
       {/* <CallUs /> */}
+      <Footer />
     </div>
   );
 };

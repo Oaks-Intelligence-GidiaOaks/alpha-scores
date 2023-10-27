@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/alphaa.svg";
+import logo from "../assets/alpha-white-2.svg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
@@ -14,7 +14,9 @@ const Header = () => {
       className={({ isActive }) => (isActive ? active : "")}
       to={route}
     >
+      {/* <a href={route}> */}
       <span>{text}</span>
+      {/* </a> */}
     </NavLink>
   );
 
@@ -23,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-color1 text-white font-[500]">
+    <div className="bg-color1 sticky top-0 z-30 text-white font-[500]">
       <div className="flex items-center container p-2 py-3 font-roboto text-sm">
         <div
           onClick={toggleSideNav}
@@ -32,13 +34,16 @@ const Header = () => {
           <AiOutlineMenu />
         </div>
 
-        <Link to={`/`}>
+        {/* <Link to="/"> */}
+        <a href="/">
           <img
-            src="./images/alpha-logoo.png"
+            // src="./images/alpha-logoo.png"
+            src={logo}
             alt=""
             className="w-36 mx-auto md:mx-0 "
           />
-        </Link>
+        </a>
+        {/* </Link> */}
 
         <div className="md:flex items-center gap-5 mx-auto hidden">
           <HeaderItem route="/" text="Home" />

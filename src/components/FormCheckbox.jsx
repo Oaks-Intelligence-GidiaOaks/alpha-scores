@@ -1,9 +1,9 @@
 import React from "react";
 
-const FormCheckbox = ({ label, onClick, isChecked }) => {
+const FormCheckbox = ({ label, isChecked, formProps }) => {
   return (
-    <div className=" p-2 space-x-3 flex items-center">
-      <input type="checkbox" className="h-4 w-4" checked={isChecked} />
+    <div className="p-1 space-x-3 flex font-pt items-center">
+      <input {...formProps} type="checkbox" className="h-4 w-4" />
       <label htmlFor="">{label}</label>
     </div>
   );

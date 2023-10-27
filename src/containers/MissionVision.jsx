@@ -23,7 +23,7 @@ const MissionVision = () => {
       <MissionCard
         bgColor="bg-primary"
         lead="OUR MISSION"
-        text="Our mission at Alpha Scores Training Limited is to provide comprehensive and tailored educational programs and workshops that equip our clients with the tools and expertise necessary to excel in their respective fields. We strive to deliver top-tier training, leverage cutting-edge methodologies, industry insights, and a commitment to fostering a dynamic learning environment, thus enabling individuals and businesses to realize their full potential and achieve sustainable success."
+        text="Our mission at Alpha Scores Training Ltd is to provide comprehensive and tailored educational programs and workshops that equip our clients with the tools and expertise necessary to excel in their respective fields. We strive to deliver top-tier training, leverage cutting-edge methodologies, industry insights, and a commitment to fostering a dynamic learning environment, thus enabling individuals and businesses to realize their full potential and achieve sustainable success."
         text2=""
       />
       <MissionCard

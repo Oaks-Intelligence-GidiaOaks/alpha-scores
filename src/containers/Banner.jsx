@@ -8,12 +8,12 @@ const Banner = () => {
           <h4 className="uppercase text-base">Your Foremost Training Hub</h4>
 
           <h2 className="font-bold text-5xl lg:text-6xl font-pt ">
-            Alpha Scores Training Limited
+            Alpha Scores Training Ltd
           </h2>
 
           <p>
             We help you take the first steps towards building your envisioned
-            career, skills, and businesses. With Alpha Scores Limited, you are
+            career, skills, and businesses. With Alpha Scores Ltd, you are
             assured of being equipped with the right kind of knowledge that will
             enable you to take giant strides
           </p>
